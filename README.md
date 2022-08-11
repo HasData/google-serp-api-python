@@ -5,7 +5,7 @@ Interface to call [Google SERP API](https://scrape-it.cloud/google-search-api/) 
 
 ## Install
 
-    npm i @scrapeit-cloud/google-serp-api
+    pip install google-serp-api
 
 ## Usage
 Signup to Scrapeit Cloud to  [get your API key](https://app.scrape-it.cloud/sign-up)  and some free credits to get started.
