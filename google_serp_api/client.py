@@ -1,4 +1,5 @@
 from requests import request, Response
+import urllib.parse
 
 from .default_headers import default_headers
 
@@ -21,4 +22,6 @@ class ScrapeitCloudClient:
         headers.update(default_headers)
         params["source"] = "python_sdk"
 
-        return request("POST", self.api_url, data=params, headers=headers, **kwargs)
+        url_params = urllib.parse.urlencode(params)
+
+        return request("GET", self.api_url + "?" + url_params, headers=headers, **kwargs)
