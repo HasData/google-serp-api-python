@@ -1,3 +1,3 @@
-__all__ = ['ScrapeitCloudClient']
+__all__ = ['GoogleSerpApi']
 
-from google_serp_api.client import ScrapeitCloudClient
+from google_serp_api.client import GoogleSerpApi
